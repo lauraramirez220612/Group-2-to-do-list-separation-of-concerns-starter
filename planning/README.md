@@ -1,6 +1,6 @@
 # Separation of Concerns Starter
 
-<!-- describe your project -->
+blalala
 
 ---
 
