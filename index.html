@@ -9,7 +9,20 @@
     <link href="./client/styles/index.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="root"></div>
+    <div class="wrapper">
+      <header>Todo List</header>
+      <div class="inputField">
+        <input type="text" placeholder="Add ">
+        <button><i class="fas fa-plus"></i></button> 
+      </div>
+      <ul class="todoList">
+        <!-- data are comes from local storage -->
+      </ul>
+      <div class="footer">
+        
+        <button>remove all</button>
+      </div>
+    </div>
 
     <script type="module" src="./client/src/init/index.js"></script>
   </body>

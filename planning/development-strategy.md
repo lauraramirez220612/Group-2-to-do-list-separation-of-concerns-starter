@@ -11,6 +11,7 @@
 - Each branch is merged to `ToDo` branch after completion
 
 ## Wireframe
+![Drag Racing](wireframe.png)
 
 ## 1. Initialize Application
 
