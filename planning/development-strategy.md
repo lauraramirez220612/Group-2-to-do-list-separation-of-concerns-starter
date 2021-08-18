@@ -43,8 +43,8 @@ This user story is developed on a branch called `ToDo`
 ### As a visitor I want to add item to a list
 ### REPO
 This user story is developed on a branch called `_`
-- Create the function `AddItem` 
-
+- Create the function `addItem` 
+ToDo
 ## 2. Item prototype Update
 
 ### As a visitor I want to update item 
