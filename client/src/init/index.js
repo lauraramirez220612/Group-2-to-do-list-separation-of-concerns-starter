@@ -42,33 +42,33 @@ function addItem(event) {
   }
 }
 
-// works
-function removeItem(event) {
-  let remove = document.getElementsByClassName('trash-btn');
-  console.log(remove);
-  let i;
-  for (i = 0; i < remove.length; i++) {
-    remove[i].onclick = function () {
-      let div = this.parentElement;
-      div.style.display = 'none';
-    };
-  }
-}
-//CHECK ITEM *******some issues********
-function checkItem(event) {
-  let check = document.getElementsByClassName('checked-btn');
+// // works
+// function removeItem(event) {
+//   let remove = document.getElementsByClassName('trash-btn');
+//   console.log(remove);
+//   let i;
+//   for (i = 0; i < remove.length; i++) {
+//     remove[i].onclick = function () {
+//       let div = this.parentElement;
+//       div.style.display = 'none';
+//     };
+//   }
+// }
+// //CHECK ITEM *******some issues********
+// function checkItem(event) {
+//   let check = document.getElementsByClassName('checked-btn');
 
-  if (event.target.tagName === 'I') {
-    event.target.classList.toggle('checked');
-  }
-  false;
-}
-//Update ITEM **********not working********
-function updateItem(event) {
-  let update = document.getElementsByClassName('update-btn');
+//   if (event.target.tagName === 'I') {
+//     event.target.classList.toggle('checked');
+//   }
+//   false;
+// }
+// //Update ITEM **********not working********
+// function updateItem(event) {
+//   let update = document.getElementsByClassName('update-btn');
 
-  console.log(update);
-}
+//   console.log(update);
+// }
 
 // //REMOVE ALL BUTTON
 // const removeAllB = document.createElement('button');
