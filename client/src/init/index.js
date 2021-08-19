@@ -42,7 +42,7 @@ function addItem(event) {
   }
 }
 
-// works ---ME
+// REMOVE ITEM
 function removeItem(event) {
   let remove = document.getElementsByClassName('trash-btn');
   console.log(remove);
