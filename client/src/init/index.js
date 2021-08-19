@@ -1,3 +1,4 @@
+
 const toDoInput = document.querySelector('.toDo-input');
 const toDoButton = document.querySelector('.toDo-input-icon');
 const toDoList = document.querySelector('.toDo-list');
@@ -80,3 +81,4 @@ function addItem(event) {
 //   let all = document.getElementsByClassName('i');
 //   toDoList.remove(all);
 // }
+
