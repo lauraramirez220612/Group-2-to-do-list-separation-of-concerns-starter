@@ -37,7 +37,7 @@ function addItem(event) {
     toDoList.appendChild(toDoDiv);
     toDoInput.value = '';
 
-     //trash button
+    //trash button
     const trashButton = document.createElement('button');
     trashButton.innerHTML = '<i class="fas fa-trash"></i>';
     trashButton.classList.add('trash-btn');
