@@ -30,11 +30,16 @@ function addItem(event) {
     toDoDiv.appendChild(newToDo);
 
     //update button
+
     const updateButton = document.createElement('button');
-    updateButton.innerHTML = '<i class= "far fa-edit"></i>';
     updateButton.classList.add('update-btn');
+    updateButton.innerHTML = '<i class= "far fa-edit"></i>';
+    updateButton.onclick = function () {
+      updateItem(newToDo);
+    };
     toDoDiv.appendChild(updateButton);
     toDoList.appendChild(toDoDiv);
+
     toDoInput.value = '';
 
     //trash button
@@ -48,17 +53,44 @@ function addItem(event) {
 // REMOVE ITEM
 function removeItem(event) {
   let remove = document.getElementsByClassName('trash-btn');
-  // console.log(remove);
+
   let i;
   for (i = 0; i < remove.length; i++) {
     remove[i].onclick = function () {
       let div = this.parentElement;
       div.style.display = 'none';
     };
+    // if (event.target.classList.contains('fa-edit')) {
+    //   const target = event.target;
+    //   const parent = target.parentElement; // parent of "target"
+    //   const txt = parent.parentElement.innerText; // parent of "parent"
+    //   console.log(txt);
+    // }
   }
 }
 
 //REMOVE ALL ITEMS ***change this function – remove only 1 time list but nod add values anymore
 function removeAll(event) {
-  toDoList.remove();
+  toDoList.innerHTML = '';
+}
+//EDITFunction
+// function updateItem(event) {
+//   let items = event.target;
+
+// let text = document.getElementsByTagName('li');
+// for (let i = 0; i < text.length; i++) {
+//   console.log(text[i].
+// }
+//   console.log(2);
+//   updateButton = this;
+//   toDoList = this.parentNode;
+//    label = toDoList.querySelector('label');
+
+//    input = listItem.querySelector('input[type=text]');
+// ​
+//    containsClass = listItem.classList.contains('editMode');
+//}
+function updateItem(e) {
+  let editValue = prompt('edit the select item', e.firstChild.nodeValue);
+  e.firstChild.nodeValue = editValue;
 }
