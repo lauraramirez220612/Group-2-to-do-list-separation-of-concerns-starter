@@ -8,8 +8,8 @@ body {
 
 h1 {
     display: block;
-    width: 40%;
     margin: 0 auto;
+    text-align: center;
     color: #3399FF;
     text-transform: uppercase;
     font-family: Verdana, sans-serif; 
@@ -77,7 +77,7 @@ li {
     list-style-type: none;
 }
 
-button {
+.update-btn, .trash-btn, .toDo-input-icon {
     background-color: #3399FF;
     border: none;
     color: white;
@@ -87,6 +87,18 @@ button {
     display: block;
     padding: 5px;
     margin: 5px;
+    font-size: 13px;
+    border-radius: 10%;
+}
+
+#clear {
+    background-color: #3399FF;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 15px auto;
     font-size: 13px;
     border-radius: 10%;
 }
