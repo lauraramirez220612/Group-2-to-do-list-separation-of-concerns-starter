@@ -96,13 +96,10 @@ li {
     background-color: #3399FF;
     border: none;
     color: white;
-    /* padding: 5px 5px; */
     text-align: center;
     text-decoration: none;
     display: block;
     margin: 15px auto;
-    /* padding: 5px; */
-    /* margin: 5px; */
     font-size: 13px;
     border-radius: 10%;
 }
