@@ -1,10 +1,13 @@
 /* eslint-disable no-alert */
-import { toDoInput, toDoList } from '../data/data.js';
+// import { toDoInput, toDoList } from '../data/data.js';
 // UPDATE ITEM
 export const updateItem = (e) => {
   const editValue = prompt('edit the select item', e.firstChild.nodeValue);
   e.firstChild.nodeValue = editValue;
 };
+
+const toDoInput = document.querySelector('.toDo-input');
+const toDoList = document.querySelector('.toDo-list');
 
 // ADD ITEM HANDLER
 export const addItem = (event) => {
