@@ -55,6 +55,7 @@ export const addItem = (event) => {
     trashButton.classList.add('trash-btn');
     toDoDiv.appendChild(trashButton);
   }
+  //remove all button
 };
 
 // REMOVE ITEM
