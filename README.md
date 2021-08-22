@@ -9,7 +9,7 @@
 - [Screenshots](#screenshots)
 - [Technologies](#technologies)
 - [Setup](#setup)
-- [Code examples] (#code-examples)
+- [Code examples](#code-examples)
 - [Features](#features)
 - [Status](#status)
 - [Inspiration](#inspiration)
