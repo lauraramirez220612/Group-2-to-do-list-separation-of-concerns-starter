@@ -69,13 +69,17 @@ li {
   width: 100%;
   display: flex;
   align-content: space-around;
+  padding: 5px;
 }
 .toDo-item {
   max-width: 200px;
-  padding: 10px;
+  /* padding: 10px; */
+  margin: auto 5px;
   font-family: Verdana, sans-serif;
   font-size: 12pt;
   list-style-type: none;
+  word-wrap: break-word;
+  /* margin: auto 0; */
 }
 
 .update-btn,
@@ -92,6 +96,7 @@ li {
   margin: 5px;
   font-size: 13px;
   border-radius: 10%;
+  max-height: 25px;
 }
 
 #clear {
@@ -119,10 +124,10 @@ button:hover {
   height: 1.5em;
   border: 1px solid #adb5bd;
   border-radius: 0.25em;
-  background-size: 50% 50%;
-  margin-right: 10px;
+  margin-bottom: 10px;
   position: relative;
   top: 7px;
+  margin: auto 5px;
 }
 
 .completed {
