@@ -17,6 +17,7 @@ const toDoList = document.querySelector('.toDo-list');
 export const addItem = (event) => {
   if (document.querySelector('.toDo-input').value.length === 0) {
     alert('The field cannot be empty!');
+    event.preventDefault();
   } else {
     event.preventDefault();
     const toDoDiv = document.createElement('div');
