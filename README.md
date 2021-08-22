@@ -1,88 +1,76 @@
-# Separation of Concerns Starter
+# Todo List
 
-<!-- describe your project -->
+> A todo list allows the user to add, edit, delete, get all and get one todo by id .
 
----
+## Table of contents
 
-## Repo Setup
+- [General info](#general-info)
+- [List Website Creation](#list-website-creation)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Code examples](#code-examples)
+- [Features](#features)
+- [Status](#status)
+- [Inspiration](#inspiration)
+- [Contact](#contact)
 
-- Give each member _write_ access to the repo (if it's a group project)
-- Turn on GitHub Pages and put a link to your website in the repo's description
-- in the _Branches_ section of your repo's settings make sure:
-  - The repository [requires a review](https://github.blog/2018-03-23-require-multiple-reviewers/) before pull requests can be merged.
-  - The `master`/`main` branch must "_Require status checks to pass before merging_"
-  - The `master`/`main` branch must "_Require require branches to be up to date before merging_"
+## General info
 
----
+A todo list , the objective is create a simple application, using separation of concerns
 
-## Local Setup
+##  List Website Creation
 
-So you're ready to start coding? If you haven't cloned this repository already you should, and then ...
+This is a full website creation project of [ToDoList](https://lauraramirez220612.github.io/Group-2-to-do-list-separation-of-concerns-starter/). This project is developed by **Group 2** of [HackYourFutureBelgium](https://hackyourfuture.be/) **Class 15** from module called [Separation of Concerns]( https://github.com/HackYourFutureBelgium/separation-of-concerns)
 
-1. Clone this repository:
-   - `$ git clone git@github.com:HackYourFutureBelgium/this-repository.git`
-2. Navigate to this repository in your local computer
-   - `$ cd this-repository`
-3. Install the project's development dependencies - you will need these for the code quality automation:
-   - `$ npm install`
+## Screenshots
 
----
+![Example screenshot]() 
 
-## Running the Site
+## Technologies
 
-This is a static website that only uses HTML, CSS and JavaScript, so you can run it using any static server - `liveServer`, `http-server`, `study-lenses`, ...
+Project is created with:
 
-Navigating to `demo.html` will run the example website for reverse-engineering.
+- JavaScript
+- HTML
+- CSS
+- VSC code
 
----
+## Setup
 
-## Developing your Code
+- `npm install`
 
-This project is a full website so you will need to run it by opening `index.html` in the browser.
+## Code Examples
 
-It's recommended that you use VSCode to write your HTML, CSS and JavaScript. Each time you make a change in VSCode you will need to go to the browser and refresh to see if it worked. Everything you have learned about the debugger will come in handy! You can use breakpoints and `debugger` statements to step through while your website is running.
+```js
 
-The only code in this project that you can develop and test separately from the rest is functions in the `/src/logic` folder, these are _pure functions_ that will need to test. You can develop these either in VSCode or Study Lenses.
+```
 
----
+## Features
 
-## Code Quality Automation
+List of features ready and Todos for future development
 
-Writing code is hard. To write even just 10 lines there are 100 things you need to think about, and 1000 mistakes you can make. Developers are clever and lazy people. They have built tools to help with all of this.
+- User can create different lists of tasks
+- In each list, user can add new tasks
+- User can edit a task
+- User can delete a task
 
-This repository comes with features to help you and your group write good code. Some features are for checking your code manually before pushing it, and others are for checking your code automatically when you open a PR to the `main`/`master` branch.
+To-do list:
 
-### Continuous Integration (CI)
+- 
+- 
 
-> checks on GitHub
+## Status
 
-When you open a PR to `main`/`master` in your repository, GitHub will run the workflows in [./.github/workflows](./.github/workflows). You can try the same scripts locally to make sure they will pass before pushing:
+Project is: _in progress_
 
-- **`npm run lint:js -- ./client`**: Lints all the .js files in your `/src` folder, if there are any warnings or errors the check will fail.
-- **`npm run lint:css -- ./client/styles`**: lints all the .css files in your `/styles` folder, if there are any warnings or errors the check will fail.
-- **`npm run test -- ./client`**: runs all the `.spec.js` fils in your `/src` folder. If any tests fail, this check will fail.
-- **`npm run document`**: re-renders the `DOCS.md` file in the root of your repository, making sure that the documentation is always up to date. If the documentation script has any trouble the check will fail.
+## Inspiration
+[Creating a better todo app - the HTML and CSS](https://www.youtube.com/watch?v=IhmSidOJSeE)
 
-You will not be able to merge your branch until all the checks pass. These checks will be run again each time you push changes to your branch, so no worries if you don't pass the checks on your first try.
-
-### Local Checks
-
-> checks on your own computer
-
-You can run the same checks locally to make sure you have no errors before pushing, this will make everything easier for you and your reviewer. If the checks pass locally then they should pass when you push.
-
-- **Linting JavaScript**
-  - `npm run lint:js -- ./path/to/file.js`: lint one file at a time by passing the path to that file
-  - `npm run lint:js:ci`: lint all of the JavaScript in `/src`. This is the same command that is run in GitHub so if it works locally it should pass the checks when you push.
-- **Linting CSS**
-  - `npm run lint:css -- ./path/to/file.css`: lint one file at a time by passing the path to that file
-  - `npm run lint:css:ci`: lint all of the CSS in `/public`. This is the same command that is run in GitHub so if it works locally it should pass the checks when you push.
-- **Testing**
-  - `npm run test -- ./path/to/file.spec.js`: test one `.spec.js` file at a time
-  - `npm run test:ci`: test all `.spec.js` files at once. This is the same command that is run in GitHub so if it works locally it should pass the checks when you push.
-- **Formatting**
-  - `npm run format -- ./path/to/file`: you can format any file type with this command (.js, .css, .html, .md)
-  - if you install the Prettier extension for VSCode and have it format on save, then you don't need to use this command
-  - there is no extra CI check for formatting, but the linter will check some formatting. The rest is up to your code reviewer
-- **Documenting**
-  - `npm run document`: render the documentation before pushing to make sure there are no errors.
+## Contact
+Project is made by: 
+- [Tatsiana](https://github.com/TatsianaRud)
+- [Laura](https://github.com/lauraramirez220612)
+- [Firewyni](https://github.com/firity)
+- [Ekatherina](https://github.com/katsmamina)
+- [Axil](https://github.com/bringmetheaxx)
