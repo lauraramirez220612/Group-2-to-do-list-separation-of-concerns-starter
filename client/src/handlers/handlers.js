@@ -1,9 +1,13 @@
 /* eslint-disable no-alert */
-// import { toDoInput, toDoList } from '../data/data.js';
 // UPDATE ITEM
-export const updateItem = (e) => {
+const updateItem = (e) => {
   const editValue = prompt('edit the select item', e.firstChild.nodeValue);
   e.firstChild.nodeValue = editValue;
+};
+
+// change style of completed task
+const completeTask = (e) => {
+  e.classList.toggle('completed');
 };
 
 const toDoInput = document.querySelector('.toDo-input');
@@ -22,11 +26,17 @@ export const addItem = (event) => {
     checkBox.type = 'checkbox';
     checkBox.classList.add('checking');
     toDoDiv.appendChild(checkBox);
-    // text
+
+    // add text of the task
     const newToDo = document.createElement('li');
     newToDo.innerText = toDoInput.value;
     newToDo.classList.add('toDo-item');
     toDoDiv.appendChild(newToDo);
+
+    // change style of completed text
+    checkBox.onclick = () => {
+      completeTask(newToDo);
+    };
 
     // update button
     const updateButton = document.createElement('button');
@@ -37,7 +47,6 @@ export const addItem = (event) => {
     };
     toDoDiv.appendChild(updateButton);
     toDoList.appendChild(toDoDiv);
-
     toDoInput.value = '';
 
     // trash button
@@ -51,7 +60,6 @@ export const addItem = (event) => {
 // REMOVE ITEM
 export const removeItem = () => {
   const remove = document.getElementsByClassName('trash-btn');
-
   let i;
   for (i = 0; i < remove.length; i++) {
     remove[i].onclick = function () {
@@ -59,6 +67,7 @@ export const removeItem = () => {
     };
   }
 };
+
 // REMOVE ALL ITEMS
 export const removeAll = () => {
   toDoList.innerHTML = '';
