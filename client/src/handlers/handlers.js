@@ -17,6 +17,7 @@ const toDoList = document.querySelector('.toDo-list');
 export const addItem = (event) => {
   if (document.querySelector('.toDo-input').value.length === 0) {
     alert('The field cannot be empty!');
+    event.preventDefault();
   } else {
     event.preventDefault();
     const toDoDiv = document.createElement('div');
@@ -55,13 +56,6 @@ export const addItem = (event) => {
     trashButton.classList.add('trash-btn');
     toDoDiv.appendChild(trashButton);
   }
-  // //remove all button
-  const toDoDiv = document.createElement('div');
-  const updateButton = document.createElement('button');
-  // updateButton.classList.add('update-btn');
-  // updateButton.innerHTML = '<i class= "far fa-edit"></i>';
-  // updateButton.onclick = () => {
-  //   updateItem(newToDo);
 };
 
 // REMOVE ITEM
