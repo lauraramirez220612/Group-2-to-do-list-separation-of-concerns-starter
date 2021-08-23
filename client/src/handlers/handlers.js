@@ -55,7 +55,13 @@ export const addItem = (event) => {
     trashButton.classList.add('trash-btn');
     toDoDiv.appendChild(trashButton);
   }
-  //remove all button
+  // //remove all button
+  const toDoDiv = document.createElement('div');
+  const updateButton = document.createElement('button');
+  // updateButton.classList.add('update-btn');
+  // updateButton.innerHTML = '<i class= "far fa-edit"></i>';
+  // updateButton.onclick = () => {
+  //   updateItem(newToDo);
 };
 
 // REMOVE ITEM
