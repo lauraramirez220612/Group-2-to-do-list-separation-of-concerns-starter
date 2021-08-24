@@ -1,10 +1,27 @@
 @import url('./other-file.css');
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
 body {
-  background: #fff;
+  background: #3399ff;
+  /* background: radial-gradient(white, #3399ff); */
   color: #333;
   font-family: Lato, sans-serif;
   display: block;
-  ackground-image: url ('https://pin.it/5VM9bQ5');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section1 {
+  background: white;
+  padding: 30px 0;
+  border-radius: 6px;
+  margin-top: 80px;
+  margin-left: 20%;
+  margin-right: 20%;
+  min-width: 300px;
 }
 
 h1 {
@@ -25,16 +42,16 @@ form {
   justify-content: center;
   margin: 0 auto;
   width: 30%;
+  min-width: 300px;
 }
 
 .toDo-container {
-  display: block;
-  width: 30%;
+  display: flex;
   margin: 0 auto;
+  min-width: 200px;
 }
 
 .toDo-input {
-  margin: 0;
   width: 300px;
   font-size: 16px;
   line-height: 16px;
@@ -68,13 +85,13 @@ li {
 }
 
 .toDo {
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: center;
-  padding: 5px;
+  padding: 15px;
 }
 .toDo-item {
-  max-width: 250px;
+  max-width: 200px;
   /* padding: 10px; */
   margin: auto 5px;
   font-family: Verdana, sans-serif;
