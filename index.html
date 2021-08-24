@@ -11,18 +11,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    
     <link href="./client/styles/index.css" rel="stylesheet" />
 
     <title>To do list</title>
   </head>
 
   <body>
+    <div class ="section1">
     <header>
+      
       <h1>Todo List</h1>
     </header>
+   
     <form>
-      <input type="text" class="toDo-input" placeholder="add a new task" />
+      <input type="text" maxlength= 100 class="toDo-input" placeholder="add a new task" />
       <button class="toDo-input-icon" type="submit">
         <i class="fas fa-plus"></i>
       </button>
@@ -31,11 +34,14 @@
       <div class="toDo-container">
         <ul class="toDo-list"></ul>
       </div>
-    </div>
+   
      <div class="section4">
       <button id="clear">
         <p>remove all</p>
       </button>
+    </div>
+
+  </div>
 
     <script type="module" src="./client/src/init/index.js"></script>
   </body>
