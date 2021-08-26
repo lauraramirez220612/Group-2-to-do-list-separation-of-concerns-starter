@@ -2,8 +2,11 @@
 // UPDATE ITEM
 const updateItem = (e) => {
   const editValue = prompt('edit the select item', e.firstChild.nodeValue);
+  if(editValue !== null) {
+    e.firstChild.nodeValue = editValue;
+  } else {
   e.preventDefault();
-  e.firstChild.nodeValue = editValue;
+  };
 };
 
 // change style of completed task
