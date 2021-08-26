@@ -55,11 +55,6 @@ List of features ready and Todos for future development
 - User can edit a task
 - User can delete a task
 
-To-do list:
-
-- 
-- 
-
 ## Status
 
 Project is: _in progress_
