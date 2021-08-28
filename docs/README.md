@@ -17,13 +17,17 @@
 - public
 - src
   - components
+  - data
+    - [data.js](#clientsrcdatadatajs)
   - handlers
+    - [handlers.js](#clientsrchandlershandlersjs)
   - init
     - [index.js](#clientsrcinitindexjs)
   - listeners
+    - [listeners.js](#clientsrclistenerslistenersjs)
   - logic
+    - [logic.js](#clientsrclogiclogicjs)
 - styles
-- [data.js](#clientdatajs)
 
 ---
 
@@ -41,7 +45,19 @@
 
 ---
 
+## /data
+
+<details><summary><a href="../../client/src/data/data.js" id="clientsrcdatadatajs">../client/src/data/data.js</a></summary>
+
+</details>
+
+---
+
 ## /handlers
+
+<details><summary><a href="../../client/src/handlers/handlers.js" id="clientsrchandlershandlersjs">../client/src/handlers/handlers.js</a></summary>
+
+</details>
 
 ---
 
@@ -55,9 +71,17 @@
 
 ## /listeners
 
+<details><summary><a href="../../client/src/listeners/listeners.js" id="clientsrclistenerslistenersjs">../client/src/listeners/listeners.js</a></summary>
+
+</details>
+
 ---
 
 ## /logic
+
+<details><summary><a href="../../client/src/logic/logic.js" id="clientsrclogiclogicjs">../client/src/logic/logic.js</a></summary>
+
+</details>
 
 ---
 
@@ -66,9 +90,5 @@
 # /styles
 
 ---
-
-<details><summary><a href="../../client/data.js" id="clientdatajs">../client/data.js</a></summary>
-
-</details>
 
 <!-- END DOCS -->
