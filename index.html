@@ -4,12 +4,62 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./client/public/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
     <link href="./client/styles/index.css" rel="stylesheet" />
+
+    <title>To do list</title>
   </head>
+
   <body>
-    <div id="root"></div>
+   <!-- <div class="area" > -->
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+</ul>
+    <!-- </div > -->
+ 
+    <div class ="section1">
+  
+    
+    <header>
+      
+      <h1>Todo List</h1>
+    </header>
+   
+    <form>
+      <input type="text" maxlength= 100 class="toDo-input" placeholder="add a new task" />
+      <button class="toDo-input-icon" type="submit">
+        <i class="fas fa-plus"></i>
+      </button>
+    </form>
+  
+      <div class="toDo-container">
+        <ul class="toDo-list"></ul>
+      </div>
+   
+     <div class="section4">
+      <button id="clear">
+        <p>remove all</p>
+      </button>
+    </div>
+    
+  </div>
+
 
     <script type="module" src="./client/src/init/index.js"></script>
   </body>
